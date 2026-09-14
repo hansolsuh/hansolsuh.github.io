@@ -1,0 +1,131 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.6in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt}
+\setlist[itemize]{nosep,leftmargin=1.3em}
+\titleformat{\section}{\large\bfseries}{}{0pt}{}
+\titlespacing*{\section}{0pt}{12pt}{5pt}
+\newcommand{\entry}[2]{\par\textbf{#1}\hfill #2\par}
+\newcommand{\paper}[3]{\par\textbf{#1}\par #2\par #3\par}
+\begin{document}
+{\LARGE\bfseries Hansol Suh}\hfill Last updated: September 14, 2026\par
+\href{https://hansolsuh.com}{hansolsuh.com} \quad
+\href{mailto:hansol.suh.123@gmail.com}{hansol.suh.123@gmail.com}\par
+\href{https://github.com/hansolsuh}{GitHub: hansolsuh} \quad
+\href{https://gitlab.com/hsuh}{GitLab: hsuh}
+
+\section{Education}
+\entry{Georgia Institute of Technology}{Atlanta, GA}
+\entry{MSc, Computational Science and Engineering}{Fall 2022}
+PhD studies, Computational Science and Engineering: Spring 2018--Fall 2022.
+Program concluded with an MSc. Advisor: Tobin Isaac. Research: numerical optimization and HPC.
+\entry{BSc, Civil Engineering, Highest Honor}{August 2011--July 2016}
+
+\section{Technical Skills}
+\textbf{Programming:} C, C++, Python, Julia, Java, MATLAB; CUDA and HIP.\par
+\textbf{Methods and tools:} MPI, OpenMP, Unix/Linux, Git, machine learning, parallel computing.
+
+\section{Publications}
+\textbf{Peer-reviewed publications}
+\paper{Verification of PETSc with CIVL Using LLM-Generated ACSL Contracts and Deterministic Driver Generation}
+{\textbf{H. Suh}, J. H\"uckelheim, and S. Siegel.}
+{Correctness 2026: 10th International Workshop on Software Correctness for HPC Applications (SC26). Accepted; workshop scheduled for November 16, 2026.}
+\paper{PETSc/TAO Developments for GPU-Based Early Exascale Systems}
+{R. T. Mills, M. F. Adams, S. Balay, J. Brown, J. Faibussowitsch, T. Isaac, M. G. Knepley, T. Munson, \textbf{H. Suh}, S. Zampini, H. Zhang, and J. Zhang.}
+{The International Journal of High Performance Computing Applications. 2025.\par
+\href{https://doi.org/10.1177/10943420241303710}{doi:10.1177/10943420241303710}}
+\paper{Evaluation of a Minimally Synchronous Algorithm for 2:1 Octree Balance}
+{\textbf{H. Suh} and T. Isaac.}
+{SC20: International Conference for High Performance Computing, Networking, Storage and Analysis. November 2020.}
+
+\textbf{Posters}
+\paper{Discrete Adjoints in PFLOTRAN for Physics-Constrained Machine Learning}
+{\textbf{H. Suh} et al.}
+{AGU Annual Meeting 2026, San Francisco, CA. Submitted.}
+
+\textbf{Preprints and manuscripts}
+\paper{A Portable and Versatile Limited-Memory BFGS Implementation in PETSc/TAO}
+{\textbf{H. Suh}, T. Isaac, A. Dener, T. Munson, H. Zhang, and R. T. Mills.}
+{\href{https://arxiv.org/abs/2608.00196}{arXiv:2608.00196}. 2026.}
+\paper{Variable Metric Davis--Yin Splitting}{\textbf{H. Suh} and T. Isaac.}{Manuscript.}
+\paper{A Heuristic for Parameter Selection in Adaptive Relaxed ADMM Based on Numerical Ranges}
+{T. Isaac and \textbf{H. Suh}.}{Manuscript.}
+
+\newpage
+\section{Technical Reports and Manuals}
+\paper{PETSc/TAO Users Manual, Revision 3.25}
+{S. Balay et al. (including \textbf{H. Suh}).}
+{ANL-21/39 Rev. 3.25. Argonne National Laboratory. 2026.}
+\paper{TAO Users Manual, Revision 3.15}
+{A. Dener, A. Denchfield, \textbf{H. Suh}, T. Munson, J. Sarich, S. Wild, S. Benson, and L. C. McInnes.}
+{ANL/MCS-TM-322 Rev. 3.15. Argonne National Laboratory. March 2021.}
+
+\section{Experience}
+\entry{Argonne National Laboratory}{Lemont, IL}
+\entry{Predoctoral Appointee}{March 2023--Present}
+\begin{itemize}
+\item Develop dense BFGS implementations for GPUs in PETSc/TAO.
+\item Develop proximal optimization solvers for PETSc/TAO.
+\item Supervisors: Tobin Isaac (former); Richard Mills (current).
+\end{itemize}
+\entry{Summer Research Appointments}{2019, 2021, 2022}
+\begin{itemize}
+\item Research Aide, Technical (June--August 2022): developed Anderson-accelerated three-operator splitting and hierarchical, composable PETSc/TAO solvers. Supervisor: Todd Munson.
+\item Research Aide (May--August 2021): implemented variable-metric three-operator splitting in PETSc/TAO and evaluated the implementation in an HPC setting. Supervisor: Alp Dener.
+\item Givens Associate (May--August 2019): implemented ADMM and a variant in PETSc/TAO and evaluated their performance in an HPC setting. Supervisor: Alp Dener.
+\end{itemize}
+\entry{Georgia Institute of Technology}{Atlanta, GA}
+\entry{Graduate Research Assistant}{May 2018--December 2022}
+Research with Tobin Isaac in PETSc development, numerical optimization and analysis, p4est, and HPC.
+\entry{Graduate Student}{August 2016--May 2018}
+\entry{Republic of Korea Army}{Icheon, South Korea}
+Anti-Aircraft Gunner; Armory Department.\hfill November 2013--August 2015
+
+\section{Grants \& Funding}
+\entry{CS2: Modular Verification of Scientific Software}{May 2025--May 2029}
+\textbf{Using Model Checking, Symbolic Execution, and Abstraction}\par
+Senior Personnel, NSF/DOE Correctness for Scientific Computing Systems (CS2), NSF 24-571.
+Award: \$3,200,000. PIs: Stephen Siegel (University of Delaware), Jan H\"uckelheim (Argonne National Laboratory).
+\entry{AI4Soil}{Summer 2026}
+A Deployable Artificial Intelligence Soil Prototype for Improving Land--Atmosphere Prediction.
+ANL LDRD Seed project; collaborator with Joshua Minai. Award: \$25,000.
+
+\section{Projects}
+\entry{Terrestrial Wetland Function and Resilience Science Focus Area}{Summer 2025--Present}
+Developing adjoint-based sensitivity-analysis capabilities in PFLOTRAN for subsurface reactive transport, and physics-constrained machine-learning methods for wetland systems.
+\par\textbf{TaoTerm}\par
+PIONEER thrust: Computationally Efficient Composable Solvers for PETSc/TAO.
+Developed composable objects for the TAO optimizer, enabling flexible, on-the-fly modification of optimization objectives.
+
+\newpage
+\section{Presentations}
+\paper{TaoTerm: Composable Objective Function Terms}{\textbf{H. Suh}.}
+{Consortium for the Advancement of Scientific Software BoF Days, online. February 11, 2026.\par
+\href{https://hansolsuh.com/assets/taoterm_2026_bof_cass-4.pdf}{Slides}}
+\paper{Dense Broyden--Fletcher--Goldfarb--Shanno (BFGS)}{\textbf{H. Suh}.}
+{PETSc User Meeting 2025, Buffalo, NY. May 20, 2025.\par
+\href{https://hansolsuh.com/assets/petsc2025_bfgs_slides.pdf}{Slides}}
+\paper{An Introduction to PETSc/TAO}{\textbf{H. Suh}.}
+{ALCF Hands-On HPC Workshop, Lemont, IL. October 31, 2024.\par
+\href{https://hansolsuh.com/assets/alcf_workshop_2024_petsc.pdf}{Slides}}
+\paper{Mini Tutorial: TaoADMM}{\textbf{H. Suh}.}
+{PETSc User Meeting 2023, Chicago, IL. June 7, 2023.\par
+\href{https://hansolsuh.com/assets/taoadmm.pdf}{Slides}}
+\paper{An Asynchronous Algorithm for 2:1 Octree Balance}{\textbf{H. Suh} and T. Isaac.}
+{SIAM Conference on Parallel Processing 2020, Seattle, WA. February 14, 2020.}
+\paper{Using the PETSc/TAO ADMM Methods on GPUs}{\textbf{H. Suh}, A. Dener, T. Isaac, and T. Munson.}
+{SIAM Conference on Parallel Processing 2020, Seattle, WA. February 13, 2020.}
+
+\section{Teaching}
+\entry{Computational Data Analysis (ISYE 6740)}{Fall 2021, Fall 2022}
+Teaching Assistant.
+\entry{Introduction to High Performance Parallel Computing (CX 4220)}{Spring 2021}
+Teaching Assistant.
+\entry{High Performance Parallel Computing (CSE 6230)}{Fall 2019}
+Teaching Assistant.
+\end{document}

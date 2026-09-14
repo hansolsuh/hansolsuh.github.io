@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Software &amp; Projects - Hansol Suh</title>
+    <meta name="description" content="Software and research projects by Hansol Suh: GPU optimization in PETSc/TAO, composable objectives, and PFLOTRAN adjoints." />
+    <meta property="og:title" content="Software &amp; Projects - Hansol Suh" />
+    <meta property="og:description" content="Software and research projects by Hansol Suh: GPU optimization in PETSc/TAO, composable objectives, and PFLOTRAN adjoints." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hansolsuh.com/projects.html" />
+    <meta property="og:image" content="https://hansolsuh.com/assets/img/hansol-suh.jpg" />
+
+    <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="container">
+        <a href="index.html">About</a>
+        <a href="projects.html" class="active" aria-current="page">Software &amp; Projects</a>
+        <a href="publications.html">Publications</a>
+        <a href="talks.html">Talks</a>
+        <a href="assets/hansol-suh-cv.pdf">CV (PDF)</a>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      <div class="container page">
+        <h1 class="post-title">Software &amp; Projects</h1>
+        <p class="intro">
+          Numerical optimization, parallel solvers, and sensitivity analysis
+          in scientific software.
+        </p>
+
+        <section id="gpu-optimization" class="project-detail" aria-labelledby="gpu-title">
+          <h2 id="gpu-title">GPU optimization in PETSc/TAO</h2>
+          <p>I develop dense BFGS implementations in PETSc/TAO. Single-node performance
+          evaluations compare recursive, compact dense, and intermediate dense
+          formulations on CPUs and GPUs on Polaris and Frontier.</p>
+          <p>Additional work includes ADMM, variable-metric three-operator
+          splitting, and proximal optimization solvers.</p>
+          <ul class="resource-links">
+            <li><a href="https://arxiv.org/abs/2608.00196">BFGS preprint</a></li>
+            <li><a href="assets/petsc2025_bfgs_slides.pdf">BFGS slides (PDF)</a></li>
+            <li><a href="assets/taoadmm.pdf">ADMM tutorial (PDF)</a></li>
+            <li><a href="https://gitlab.com/petsc/petsc">PETSc source repository</a></li>
+          </ul>
+        </section>
+
+        <section id="taoterm" class="project-detail" aria-labelledby="taoterm-title">
+          <h2 id="taoterm-title">TaoTerm: composable optimization objectives</h2>
+          <p>I developed TaoTerm objects for composing and modifying optimization
+          objectives in PETSc/TAO. Part of the PIONEER thrust on computationally
+          efficient composable solvers.</p>
+          <ul class="resource-links">
+            <li><a href="assets/taoterm_2026_bof_cass-4.pdf">CASS BoF 2026 slides (PDF)</a></li>
+            <li><a href="https://gitlab.com/hsuh">GitLab</a></li>
+          </ul>
+        </section>
+
+        <section id="pflotran" class="project-detail" aria-labelledby="pflotran-title">
+          <h2 id="pflotran-title">Adjoint sensitivity analysis in PFLOTRAN</h2>
+          <p>I develop adjoint-based sensitivity analysis in PFLOTRAN for
+          subsurface reactive transport and physics-constrained machine-learning
+          methods for wetland systems.</p>
+          <p>Terrestrial Wetland Function and Resilience Science Focus Area.
+          Summer 2025&ndash;present.</p>
+        </section>
+
+        <section class="project-detail" aria-labelledby="experience-title">
+          <h2 id="experience-title">Experience &amp; tools</h2>
+          <p>Argonne National Laboratory: research appointments in 2019, 2021,
+          and 2022; predoctoral appointee since March 2023. Georgia Tech:
+          graduate research in numerical optimization, PETSc, and parallel
+          octree algorithms in p4est.</p>
+          <p>C, C++, Python, CUDA, HIP, MPI, OpenMP, Linux, Git.</p>
+          <p><a href="assets/hansol-suh-cv.pdf">CV (PDF)</a></p>
+        </section>
+
+        <h2>Grants &amp; Funding</h2>
+        <ul class="pub-list">
+          <li>
+            <span class="pub-title">CS2: Modular Verification of Scientific Software Using Model Checking, Symbolic Execution, and Abstraction</span>
+            <span class="pub-authors">Senior Personnel, NSF/DOE Correctness for Scientific Computing Systems (CS2), NSF 24-571.</span>
+            <span class="pub-venue">Award: $3,200,000. May 2025&ndash;May 2029. PIs: Stephen Siegel (University of Delaware), Jan H&uuml;ckelheim (Argonne National Laboratory).</span>
+          </li>
+          <li>
+            <span class="pub-title">AI4Soil: A Deployable Artificial Intelligence Soil Prototype for Improving Land&ndash;Atmosphere Prediction</span>
+            <span class="pub-authors">ANL LDRD Seed project; collaborator with Joshua Minai.</span>
+            <span class="pub-venue">Award: $25,000. Summer 2026.</span>
+          </li>
+        </ul>
+
+        <p class="page-note">
+          <a href="mailto:hansol.suh.123@gmail.com">hansol.suh.123@gmail.com</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">&copy; 2026 Hansol Suh</footer>
+  </body>
+
+</html>
